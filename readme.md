@@ -1,4 +1,4 @@
-## Global Warming Dashboard which provides the evidence that Global Warming is Happening.
+## Interactive Dashboard which provides the evidence that Global Warming is Happening.
 
 Details of the Dasboard :
 1. The website has been designed using D3 , HTML and CSS for the responsiveness and styling
@@ -20,17 +20,21 @@ How to run the dashboard:
 
 Image's of the interactive dashboard.
 
-1. Carbon-Dioxide Sheet shpwing emission for each country over the years from 1990-2014.
+1. **Carbon-Dioxide Sheet shpwing emission for each country over the years from 1990-2014.**
 
 ![](Sheet3.png)
 
-2. Twitter Sentiment Analyses showing different emotions of people about Global Warming and **top 10 tweets.**
+<br />
+2. **Twitter Sentiment Analyses showing different emotions of people about Global Warming and top 10 tweets.**
 
 ![](Sheet1.png)
 
-3. Earth temperature over the years.
-
+<br />
+3. **Earth temperature over the years.**
 ![](Sheet2.png)
 
-4. Frequent positive and negative words used by the people to express about **Global Warming**.
+<br />
+4. **Frequent positive and negative words used by the people to express about Global Warming**.
+
+![](Sheet4.png)
 

@@ -1,0 +1,37 @@
+[1mdiff --git a/readme.md b/readme.md[m
+[1mindex 460808d..5bd36f6 100644[m
+[1m--- a/readme.md[m
+[1m+++ b/readme.md[m
+[36m@@ -1,4 +1,4 @@[m
+[31m-## Global Warming Dashboard which provides the evidence that Global Warming is Happening.[m
+[32m+[m[32m## Interactive Dashboard which provides the evidence that Global Warming is Happening.[m
+ [m
+ Details of the Dasboard :[m
+ 1. The website has been designed using D3 , HTML and CSS for the responsiveness and styling[m
+[36m@@ -20,17 +20,21 @@[m [mHow to run the dashboard:[m
+ [m
+ Image's of the interactive dashboard.[m
+ [m
+[31m-1. Carbon-Dioxide Sheet shpwing emission for each country over the years from 1990-2014.[m
+[32m+[m[32m1. **Carbon-Dioxide Sheet shpwing emission for each country over the years from 1990-2014.**[m
+ [m
+ ![](Sheet3.png)[m
+ [m
+[31m-2. Twitter Sentiment Analyses showing different emotions of people about Global Warming and **top 10 tweets.**[m
+[32m+[m[32m<br />[m
+[32m+[m[32m2. **Twitter Sentiment Analyses showing different emotions of people about Global Warming and top 10 tweets.**[m
+ [m
+ ![](Sheet1.png)[m
+ [m
+[31m-3. Earth temperature over the years.[m
+[31m-[m
+[32m+[m[32m<br />[m
+[32m+[m[32m3. **Earth temperature over the years.**[m
+ ![](Sheet2.png)[m
+ [m
+[31m-4. Frequent positive and negative words used by the people to express about **Global Warming**.[m
+[32m+[m[32m<br />[m
+[32m+[m[32m4. **Frequent positive and negative words used by the people to express about Global Warming**.[m
+[32m+[m
+[32m+[m[32m![](Sheet4.png)[m
+ [m
