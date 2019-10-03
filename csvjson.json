@@ -1,0 +1,577 @@
+[
+  {
+    "Year": 1902,
+    "Anomaly": -0.2463,
+    "ActualTemp": 13.6537
+  },
+  {
+    "Year": 1903,
+    "Anomaly": -0.3369,
+    "ActualTemp": 13.5631
+  },
+  {
+    "Year": 1904,
+    "Anomaly": -0.4194,
+    "ActualTemp": 13.4806
+  },
+  {
+    "Year": 1905,
+    "Anomaly": -0.2931,
+    "ActualTemp": 13.6069
+  },
+  {
+    "Year": 1906,
+    "Anomaly": -0.2174,
+    "ActualTemp": 13.6826
+  },
+  {
+    "Year": 1907,
+    "Anomaly": -0.3706,
+    "ActualTemp": 13.5294
+  },
+  {
+    "Year": 1908,
+    "Anomaly": -0.4396,
+    "ActualTemp": 13.4604
+  },
+  {
+    "Year": 1909,
+    "Anomaly": -0.4261,
+    "ActualTemp": 13.4739
+  },
+  {
+    "Year": 1910,
+    "Anomaly": -0.3789,
+    "ActualTemp": 13.5211
+  },
+  {
+    "Year": 1911,
+    "Anomaly": -0.4332,
+    "ActualTemp": 13.4668
+  },
+  {
+    "Year": 1912,
+    "Anomaly": -0.3288,
+    "ActualTemp": 13.5712
+  },
+  {
+    "Year": 1913,
+    "Anomaly": -0.3162,
+    "ActualTemp": 13.5838
+  },
+  {
+    "Year": 1914,
+    "Anomaly": -0.1395,
+    "ActualTemp": 13.7605
+  },
+  {
+    "Year": 1915,
+    "Anomaly": -0.0693,
+    "ActualTemp": 13.8307
+  },
+  {
+    "Year": 1916,
+    "Anomaly": -0.293,
+    "ActualTemp": 13.607
+  },
+  {
+    "Year": 1917,
+    "Anomaly": -0.3146,
+    "ActualTemp": 13.5854
+  },
+  {
+    "Year": 1918,
+    "Anomaly": -0.2084,
+    "ActualTemp": 13.6916
+  },
+  {
+    "Year": 1919,
+    "Anomaly": -0.2055,
+    "ActualTemp": 13.6945
+  },
+  {
+    "Year": 1920,
+    "Anomaly": -0.2105,
+    "ActualTemp": 13.6895
+  },
+  {
+    "Year": 1921,
+    "Anomaly": -0.1485,
+    "ActualTemp": 13.7515
+  },
+  {
+    "Year": 1922,
+    "Anomaly": -0.2304,
+    "ActualTemp": 13.6696
+  },
+  {
+    "Year": 1923,
+    "Anomaly": -0.2156,
+    "ActualTemp": 13.6844
+  },
+  {
+    "Year": 1924,
+    "Anomaly": -0.2486,
+    "ActualTemp": 13.6514
+  },
+  {
+    "Year": 1925,
+    "Anomaly": -0.1481,
+    "ActualTemp": 13.7519
+  },
+  {
+    "Year": 1926,
+    "Anomaly": -0.0667,
+    "ActualTemp": 13.8333
+  },
+  {
+    "Year": 1927,
+    "Anomaly": -0.1546,
+    "ActualTemp": 13.7454
+  },
+  {
+    "Year": 1928,
+    "Anomaly": -0.1774,
+    "ActualTemp": 13.7226
+  },
+  {
+    "Year": 1929,
+    "Anomaly": -0.2985,
+    "ActualTemp": 13.6015
+  },
+  {
+    "Year": 1930,
+    "Anomaly": -0.1003,
+    "ActualTemp": 13.7997
+  },
+  {
+    "Year": 1931,
+    "Anomaly": -0.0686,
+    "ActualTemp": 13.8314
+  },
+  {
+    "Year": 1932,
+    "Anomaly": -0.1168,
+    "ActualTemp": 13.7832
+  },
+  {
+    "Year": 1933,
+    "Anomaly": -0.2439,
+    "ActualTemp": 13.6561
+  },
+  {
+    "Year": 1934,
+    "Anomaly": -0.1015,
+    "ActualTemp": 13.7985
+  },
+  {
+    "Year": 1935,
+    "Anomaly": -0.1392,
+    "ActualTemp": 13.7608
+  },
+  {
+    "Year": 1936,
+    "Anomaly": -0.1134,
+    "ActualTemp": 13.7866
+  },
+  {
+    "Year": 1937,
+    "Anomaly": -0.0157,
+    "ActualTemp": 13.8843
+  },
+  {
+    "Year": 1938,
+    "Anomaly": -0.0288,
+    "ActualTemp": 13.8712
+  },
+  {
+    "Year": 1939,
+    "Anomaly": -0.0139,
+    "ActualTemp": 13.8861
+  },
+  {
+    "Year": 1940,
+    "Anomaly": 0.0947,
+    "ActualTemp": 13.9947
+  },
+  {
+    "Year": 1941,
+    "Anomaly": 0.196,
+    "ActualTemp": 14.096
+  },
+  {
+    "Year": 1942,
+    "Anomaly": 0.1538,
+    "ActualTemp": 14.0538
+  },
+  {
+    "Year": 1943,
+    "Anomaly": 0.157,
+    "ActualTemp": 14.057
+  },
+  {
+    "Year": 1944,
+    "Anomaly": 0.2928,
+    "ActualTemp": 14.1928
+  },
+  {
+    "Year": 1945,
+    "Anomaly": 0.171,
+    "ActualTemp": 14.071
+  },
+  {
+    "Year": 1946,
+    "Anomaly": -0.004,
+    "ActualTemp": 13.896
+  },
+  {
+    "Year": 1947,
+    "Anomaly": -0.0477,
+    "ActualTemp": 13.8523
+  },
+  {
+    "Year": 1948,
+    "Anomaly": -0.0487,
+    "ActualTemp": 13.8513
+  },
+  {
+    "Year": 1949,
+    "Anomaly": -0.0568,
+    "ActualTemp": 13.8432
+  },
+  {
+    "Year": 1950,
+    "Anomaly": -0.1616,
+    "ActualTemp": 13.7384
+  },
+  {
+    "Year": 1951,
+    "Anomaly": -0.0132,
+    "ActualTemp": 13.8868
+  },
+  {
+    "Year": 1952,
+    "Anomaly": 0.0248,
+    "ActualTemp": 13.9248
+  },
+  {
+    "Year": 1953,
+    "Anomaly": 0.0952,
+    "ActualTemp": 13.9952
+  },
+  {
+    "Year": 1954,
+    "Anomaly": -0.1165,
+    "ActualTemp": 13.7835
+  },
+  {
+    "Year": 1955,
+    "Anomaly": -0.1354,
+    "ActualTemp": 13.7646
+  },
+  {
+    "Year": 1956,
+    "Anomaly": -0.199,
+    "ActualTemp": 13.701
+  },
+  {
+    "Year": 1957,
+    "Anomaly": 0.0488,
+    "ActualTemp": 13.9488
+  },
+  {
+    "Year": 1958,
+    "Anomaly": 0.1095,
+    "ActualTemp": 14.0095
+  },
+  {
+    "Year": 1959,
+    "Anomaly": 0.0596,
+    "ActualTemp": 13.9596
+  },
+  {
+    "Year": 1960,
+    "Anomaly": 0.0204,
+    "ActualTemp": 13.9204
+  },
+  {
+    "Year": 1961,
+    "Anomaly": 0.0775,
+    "ActualTemp": 13.9775
+  },
+  {
+    "Year": 1962,
+    "Anomaly": 0.0888,
+    "ActualTemp": 13.9888
+  },
+  {
+    "Year": 1963,
+    "Anomaly": 0.1068,
+    "ActualTemp": 14.0068
+  },
+  {
+    "Year": 1964,
+    "Anomaly": -0.1495,
+    "ActualTemp": 13.7505
+  },
+  {
+    "Year": 1965,
+    "Anomaly": -0.078,
+    "ActualTemp": 13.822
+  },
+  {
+    "Year": 1966,
+    "Anomaly": -0.0227,
+    "ActualTemp": 13.8773
+  },
+  {
+    "Year": 1967,
+    "Anomaly": -0.0131,
+    "ActualTemp": 13.8869
+  },
+  {
+    "Year": 1968,
+    "Anomaly": -0.0296,
+    "ActualTemp": 13.8704
+  },
+  {
+    "Year": 1969,
+    "Anomaly": 0.0929,
+    "ActualTemp": 13.9929
+  },
+  {
+    "Year": 1970,
+    "Anomaly": 0.0372,
+    "ActualTemp": 13.9372
+  },
+  {
+    "Year": 1971,
+    "Anomaly": -0.0783,
+    "ActualTemp": 13.8217
+  },
+  {
+    "Year": 1972,
+    "Anomaly": 0.0264,
+    "ActualTemp": 13.9264
+  },
+  {
+    "Year": 1973,
+    "Anomaly": 0.1641,
+    "ActualTemp": 14.0641
+  },
+  {
+    "Year": 1974,
+    "Anomaly": -0.0719,
+    "ActualTemp": 13.8281
+  },
+  {
+    "Year": 1975,
+    "Anomaly": 0.0034,
+    "ActualTemp": 13.9034
+  },
+  {
+    "Year": 1976,
+    "Anomaly": -0.0792,
+    "ActualTemp": 13.8208
+  },
+  {
+    "Year": 1977,
+    "Anomaly": 0.1978,
+    "ActualTemp": 14.0978
+  },
+  {
+    "Year": 1978,
+    "Anomaly": 0.1123,
+    "ActualTemp": 14.0123
+  },
+  {
+    "Year": 1979,
+    "Anomaly": 0.2273,
+    "ActualTemp": 14.1273
+  },
+  {
+    "Year": 1980,
+    "Anomaly": 0.2637,
+    "ActualTemp": 14.1637
+  },
+  {
+    "Year": 1981,
+    "Anomaly": 0.2999,
+    "ActualTemp": 14.1999
+  },
+  {
+    "Year": 1982,
+    "Anomaly": 0.1815,
+    "ActualTemp": 14.0815
+  },
+  {
+    "Year": 1983,
+    "Anomaly": 0.3411,
+    "ActualTemp": 14.2411
+  },
+  {
+    "Year": 1984,
+    "Anomaly": 0.149,
+    "ActualTemp": 14.049
+  },
+  {
+    "Year": 1985,
+    "Anomaly": 0.1342,
+    "ActualTemp": 14.0342
+  },
+  {
+    "Year": 1986,
+    "Anomaly": 0.2296,
+    "ActualTemp": 14.1296
+  },
+  {
+    "Year": 1987,
+    "Anomaly": 0.3696,
+    "ActualTemp": 14.2696
+  },
+  {
+    "Year": 1988,
+    "Anomaly": 0.3757,
+    "ActualTemp": 14.2757
+  },
+  {
+    "Year": 1989,
+    "Anomaly": 0.297,
+    "ActualTemp": 14.197
+  },
+  {
+    "Year": 1990,
+    "Anomaly": 0.4328,
+    "ActualTemp": 14.3328
+  },
+  {
+    "Year": 1991,
+    "Anomaly": 0.4055,
+    "ActualTemp": 14.3055
+  },
+  {
+    "Year": 1992,
+    "Anomaly": 0.2571,
+    "ActualTemp": 14.1571
+  },
+  {
+    "Year": 1993,
+    "Anomaly": 0.2853,
+    "ActualTemp": 14.1853
+  },
+  {
+    "Year": 1994,
+    "Anomaly": 0.3409,
+    "ActualTemp": 14.2409
+  },
+  {
+    "Year": 1995,
+    "Anomaly": 0.4577,
+    "ActualTemp": 14.3577
+  },
+  {
+    "Year": 1996,
+    "Anomaly": 0.3228,
+    "ActualTemp": 14.2228
+  },
+  {
+    "Year": 1997,
+    "Anomaly": 0.5187,
+    "ActualTemp": 14.4187
+  },
+  {
+    "Year": 1998,
+    "Anomaly": 0.6344,
+    "ActualTemp": 14.5344
+  },
+  {
+    "Year": 1999,
+    "Anomaly": 0.4438,
+    "ActualTemp": 14.3438
+  },
+  {
+    "Year": 2000,
+    "Anomaly": 0.4262,
+    "ActualTemp": 14.3262
+  },
+  {
+    "Year": 2001,
+    "Anomaly": 0.5473,
+    "ActualTemp": 14.4473
+  },
+  {
+    "Year": 2002,
+    "Anomaly": 0.6023,
+    "ActualTemp": 14.5023
+  },
+  {
+    "Year": 2003,
+    "Anomaly": 0.6134,
+    "ActualTemp": 14.5134
+  },
+  {
+    "Year": 2004,
+    "Anomaly": 0.5783,
+    "ActualTemp": 14.4783
+  },
+  {
+    "Year": 2005,
+    "Anomaly": 0.6585,
+    "ActualTemp": 14.5585
+  },
+  {
+    "Year": 2006,
+    "Anomaly": 0.6125,
+    "ActualTemp": 14.5125
+  },
+  {
+    "Year": 2007,
+    "Anomaly": 0.61,
+    "ActualTemp": 14.51
+  },
+  {
+    "Year": 2008,
+    "Anomaly": 0.5419,
+    "ActualTemp": 14.4419
+  },
+  {
+    "Year": 2009,
+    "Anomaly": 0.6367,
+    "ActualTemp": 14.5367
+  },
+  {
+    "Year": 2010,
+    "Anomaly": 0.7014,
+    "ActualTemp": 14.6014
+  },
+  {
+    "Year": 2011,
+    "Anomaly": 0.5788,
+    "ActualTemp": 14.4788
+  },
+  {
+    "Year": 2012,
+    "Anomaly": 0.624,
+    "ActualTemp": 14.524
+  },
+  {
+    "Year": 2013,
+    "Anomaly": 0.6679,
+    "ActualTemp": 14.5679
+  },
+  {
+    "Year": 2014,
+    "Anomaly": 0.7408,
+    "ActualTemp": 14.6408
+  },
+  {
+    "Year": 2015,
+    "Anomaly": 0.8998,
+    "ActualTemp": 14.7998
+  },
+  {
+    "Year": 2016,
+    "Anomaly": 0.9363,
+    "ActualTemp": 14.8363
+  }
+]

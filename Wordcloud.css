@@ -1,0 +1,405 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+div#layout {
+  text-align: center;
+}
+
+div#container1 {
+  width: 800px;
+  height: 800px;
+  margin: left;
+  background-color: #2F4A6D;
+}
+
+svg{
+  width: 100%;
+  height: 100%;
+}
+
+.bar {
+  fill: #80cbc4;
+}
+
+text {
+  font-size: 12px;
+  fill: #fff;
+}
+
+path {
+  stroke: gray;
+}
+
+line {
+  stroke: gray;
+}
+
+line#limit {
+  stroke: #FED966;
+  stroke-width: 3;
+  stroke-dasharray: 3 6;
+}
+
+.grid path {
+  stroke-width: 0;
+}
+
+.grid .tick line {
+  stroke: #9FAAAE;
+  stroke-opacity: 0.3;
+}
+
+text.divergence {
+  font-size: 14px;
+  fill: #2F4A6D;
+}
+
+text.value {
+  font-size: 14px;
+}
+
+text.title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+text.label {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+text.source {
+  font-size: 10px;
+}
+* {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #ecf0f1;
+}
+
+#header {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+#word{
+    background-color: black;
+    text-align: center
+    
+}
+
+.button {
+   background-color: black;
+  border-style: solid;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.8;
+  color: white;
+  padding: 15px;
+  text-align: center
+  transition: 0.3s;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover {opacity: 1.5}
+
+.button2 {background-color: black;} 
+.button3 {background-color: black;} 
+.button4 {background-color: black;} 
+.button5 {background-color: black;} 
+.button6 {background-color: black;} 
+
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #ecf0f1;
+}
+
+#nav {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+#nav p {
+  margin: 4px;
+}
+
+#nav h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+#nav input {
+  margin-left: 20px;
+}
+
+
+#year {
+    font-size: 26px;
+}
+
+p1 {
+  font-size: 2.0em; /* 40px/16=2.5em */
+    
+}
+
+p2 {
+  font-size: 4.9em; /* 40px/16=2.5em */
+    
+}
+
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chart-container {
+  display: inline-block;
+  width: 45%;
+  margin: 1% 2%;
+  vertical-align: top;
+}
+
+.tooltip {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+  border: 4px solid #2c3e50;
+  background-color: #ecf0f1;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.tooltip p {
+  margin: 2px;
+}
+
+.tooltip:after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  border: 8px solid transparent;
+  border-top-color: #2c3e50;
+  bottom: -20px;
+  margin-left: -4px;
+}
+
+.country {
+  stroke: none;
+}
+
+.country:hover {
+  cursor: pointer;
+}
+
+.country.active {
+  stroke: #2c3e50;
+  stroke-width: 2px;
+}
+
+.y-axis-label {
+  font-size: 0.8em;
+}
+
+.tick text {
+  font-size: 1.5em;
+}
+
+a:hover {
+    background-color: #00913c;}
+
+.slider {
+  -webkit-appearance: none;
+  width: 50%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+	.axis {
+	  font: 10px sans-serif;
+	}
+
+	.axis path,
+	.axis line {
+	  fill: none;
+	  stroke: #000;
+	  shape-rendering: crispEdges;
+	}
+
+      .bar {
+        fill: steelblue;
+      }
+
+      .bar:hover {
+        fill: brown;
+      }
+
+      .title {
+        font: bold 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      .axis {
+        font: 10px sans-serif;
+      }
+
+      .axis path,
+      .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+      }
+
+      .x.axis path {
+        display: none;
+      }
+
+
+
+div#layout {
+  text-align: center;
+}
+
+
+.bar {
+  fill: #80cbc4;
+}
+
+text {
+  font-size: 20px;
+  fill: #fff;
+}
+
+path {
+  stroke: gray;
+}
+
+line {
+  stroke: gray;
+}
+
+line#limit {
+  stroke: #FED966;
+  stroke-width: 3;
+  stroke-dasharray: 3 6;
+}
+
+.grid path {
+  stroke-width: 0;
+}
+
+.grid .tick line {
+  stroke: #9FAAAE;
+  stroke-opacity: 0.3;
+}
+
+text.divergence {
+  font-size: 14px;
+  fill: #2F4A6D;
+}
+
+text.value {
+  font-size: 14px;
+}
+
+text.title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+text.label {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+text.source {
+  font-size: 10px;
+}
+
+    .class1 {
+      max-height:0px;
+      transition:max-height 1s;
+      overflow:hidden;
+    }
+.container {
+  position: relative;
+}
+
+.left-half {
+ background-color: #bf0000;
+  float: left;
+max-width:100%;
+ height: 800px;
+  width: 50%;
+}
+.right-half {
+  background-color: #00af29;
+  float: left;
+max-width:100%;
+ height: 800px;
+  width: 50%;
+}
+div.image {
+   content:url('Positivewordcloud.PNG');
+     max-width: 100%;
+    height: 800px;
+    
+}
+div.image1 {
+   content:url('Negativewordcloud.PNG');
+     max-width: 100%;
+     height: 800px;
+    
+}
+p3 {
+  font-size: 2.6em;
+    color: white;
+     text-align: center;
+    /* 40px/16=2.5em */
+    
+}

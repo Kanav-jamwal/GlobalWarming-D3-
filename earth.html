@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Global Warming Dashboard</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="arctic.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Bar chart with D3.js</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+
+</head>
+
+    
+
+<body>
+    <div id="header">
+        <p2>GLobal Warming Dashboard</p2>
+        <p>
+            <a href=".//earth.html" class="button">Global Earth Temperature Deviation</a>
+            <a href=".//wordcloud.html" class="button button2">Word Cloud</a>
+            <a href=".//Co2Emission.html" class="button button3">Carbon Dioxide Emission</a>
+            <a href=".//Twitterdata.html" class="button button4">Twitter Data Sentiment</a>
+            <a href=".//SeaLevel.html" class="button button5">Sea Level</a>
+            <a href=".//ArcticIceSheet.html" class="button button6">Arctic Ice Sheet</a>
+            </p>
+    
+    
+
+   <br>
+    </div>
+     <div class="container">
+  
+  <div id="left-half">
+      <div id="inner">
+        <p3> Global Earth Temperature over the Years</p3>
+      </div>
+    <svg/>
+    
+  </div> <!-- end .left-half -->
+  
+  <div class="right-half">
+    
+     <p3>
+             Global Temperature Deviation
+      </p3>
+    <ul>
+ 
+  <li>This graph illustrates the change in global surface temperature relative to 1951-1980 average temperatures. Eighteen of the 19 warmest years all have occurred since 2001, with the exception of 1998</li>
+
+     
+</ul>  
+  </div> <!-- end .right-half -->
+
+</div>
+<!-- load the d3.js library -->
+        
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+// set the dimensions and margins of the graph
+var margin = {top: 20, right: 10, bottom: 100, left: 100},
+    width = 960 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+// parse the Year / time
+var parseTime = d3.timeParse("%Y");
+
+// set the ranges
+var x = d3.scaleTime().range([0, width]);
+var y = d3.scaleLinear().range([height, 0]);
+
+// gridlines in x axis function
+function make_x_gridlines() {   
+    return d3.axisBottom(x)
+        .ticks(5)
+}
+
+// gridlines in y axis function
+function make_y_gridlines() {   
+    return d3.axisLeft(y)
+        .ticks(5)
+}
+// define the line
+var valueline = d3.line()
+    .x(function(d) { return x(d.Year); })
+    .y(function(d) { return y(d.Anomaly); });
+
+// append the svg obgect to the body of the page
+// appends a 'group' element to 'svg'
+// moves the 'group' element to the top left margin
+var svg = d3.select("#left-half").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
+
+// Get the data
+d3.csv("EarthTemp.csv", function(error, data) {
+  if (error) throw error;
+
+  // format the data
+  data.forEach(function(d) {
+      d.Year = parseTime(d.Year);
+      d.Anomaly = d.Anomaly;
+  });
+
+  // Scale the range of the data
+  x.domain(d3.extent(data, function(d) { return d.Year; }));
+  y.domain([-0.9, d3.max(data, function(d) { return d.Anomaly; })]);
+
+  // Add the valueline path.
+  svg.append("path")
+      .data([data])
+      .attr("class", "line")
+      .attr("d", valueline);
+
+    
+      svg.append("g")     
+      .attr("class", "grid")
+      .attr("transform", "translate(0," + height + ")")
+      .call(make_x_gridlines()
+          .tickSize(-height)
+          .tickFormat("")
+      )
+
+  // add the Y gridlines
+  svg.append("g")     
+      .attr("class", "grid")
+      .call(make_y_gridlines()
+          .tickSize(-width)
+          .tickFormat("")
+      )
+  // Add the X Axis
+  svg.append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x));
+    
+     svg.append("text")             
+      .attr("transform",
+            "translate(" + (width/2) + " ," + 
+                           (height + margin.top + 20) + ")")
+      .style("text-anchor", "middle")
+      .text("Years (1900-2016)");
+      
+
+  // Add the Y Axis
+  svg.append("g")
+    
+    .call(d3.axisLeft(y));   
+
+    svg.append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 0 - margin.left)
+      .attr("x",0 - (height / 2))
+      .attr("dy", "1em")
+      .style("text-anchor", "middle")
+      .text("Temperature Deviation Earth( Avg 1950-1980)");      
+
+
+});
+    
+</script>

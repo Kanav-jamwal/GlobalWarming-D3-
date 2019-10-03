@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+    body {
+        font: 10px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+
+    .x.axis path {
+        display: none;
+    }
+
+    .line {
+        fill: none;
+        stroke: steelblue;
+        stroke-width: 1.5px;
+    }
+
+    .overlay {
+        fill: none;
+        pointer-events: all;
+    }
+
+    .focus circle {
+        fill: steelblue;
+    }
+
+    .focus text {
+        font-size: 14px;
+    }
+
+    .tooltip {
+        fill: white;
+        stroke: #000;
+    }
+
+    .tooltip-Year, .tooltip-Anamoly {
+        font-weight: bold;
+    }
+
+</style>
+
+<body>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script>
+
+    var margin = { top: 30, right: 120, bottom: 30, left: 50 },
+        width = 960 - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom,
+        tooltip = { width: 100, height: 100, x: 10, y: -30 };
+
+    var parseYear = d3.time.format("%Y").parse,
+        bisectYear = d3.bisector(function(d) { return d.Year; }).left,
+        formatValue = d3.format(","),
+        YearFormatter = d3.time.format("%m/%d/%y");
+
+    var x = d3.time.scale()
+            .range([0, width]);
+
+    var y = d3.scale.linear()
+            .range([height, 0]);
+
+    var xAxis = d3.svg.axis()
+        .scale(x)
+        .orient("bottom")
+        .tickFormat(YearFormatter);
+
+    var yAxis = d3.svg.axis()
+        .scale(y)
+        .orient("left")
+        .tickFormat(d3.format("s"))
+
+    var line = d3.svg.line()
+        .x(function(d) { return x(d.Year); })
+        .y(function(d) { return y(d.Anamoly); });
+
+    var svg = d3.select("body").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    d3.csv("EarthTemp.csv", function(error, data) {
+        if (error) throw error;
+
+        data.forEach(function(d) {
+            d.Year = parseYear(d.Year);
+            d.Anamoly = +d.Anamoly;
+        });
+
+        data.sort(function(a, b) {
+            return a.Year - b.Year;
+        });
+
+        x.domain([data[0].Year, data[data.length - 1].Year]);
+        y.domain(d3.extent(data, function(d) { return d.Anamoly; }));
+
+        svg.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis);
+
+        svg.append("g")
+            .attr("class", "y axis")
+            .call(yAxis)
+            .append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("y", 6)
+            .attr("dy", ".71em")
+            .style("text-anchor", "end")
+            .text("Number of Anamoly");
+
+        svg.append("path")
+            .datum(data)
+            .attr("class", "line")
+            .attr("d", line);
+
+        var focus = svg.append("g")
+            .attr("class", "focus")
+            .style("display", "none");
+
+        focus.append("circle")
+            .attr("r", 5);
+
+        focus.append("rect")
+            .attr("class", "tooltip")
+            .attr("width", 100)
+            .attr("height", 50)
+            .attr("x", 10)
+            .attr("y", -22)
+            .attr("rx", 4)
+            .attr("ry", 4);
+
+        focus.append("text")
+            .attr("class", "tooltip-Year")
+            .attr("x", 18)
+            .attr("y", -2);
+
+        focus.append("text")
+            .attr("x", 18)
+            .attr("y", 18)
+            .text("Anamoly:");
+
+        focus.append("text")
+            .attr("class", "tooltip-Anamoly")
+            .attr("x", 60)
+            .attr("y", 18);
+
+        svg.append("rect")
+            .attr("class", "overlay")
+            .attr("width", width)
+            .attr("height", height)
+            .on("mouseover", function() { focus.style("display", null); })
+            .on("mouseout", function() { focus.style("display", "none"); })
+            .on("mousemove", mousemove);
+
+        function mousemove() {
+            var x0 = x.invert(d3.mouse(this)[0]),
+                i = bisectYear(data, x0, 1),
+                d0 = data[i - 1],
+                d1 = data[i],
+                d = x0 - d0.Year > d1.Year - x0 ? d1 : d0;
+            focus.attr("transform", "translate(" + x(d.Year) + "," + y(d.Anamoly) + ")");
+            focus.select(".tooltip-Year").text(YearFormatter(d.Year));
+            focus.select(".tooltip-Anamoly").text(formatValue(d.Anamoly));
+        }
+    });
+
+</script>

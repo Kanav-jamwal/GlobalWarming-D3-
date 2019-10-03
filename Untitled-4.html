@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+/*all chart CSS*/
+body {
+  font: 10px sans-serif;
+}
+/*line and bar chart CSS*/
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.x.axis path {
+  display: none;
+}
+/*Bar chart CSS*/
+.bar {
+  fill: #3B8686;
+}
+.bar text	{
+	color: #000000;
+}
+/*Line chart CSS*/
+.line {
+  fill: none;
+  stroke: #3B8686;
+  stroke-width: 1.5px;
+}
+</style>
+<body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+<script>
+
+var linemargin = {top: 20, right: 20, bottom: 30, left: 50},
+    linewidth = 1000 - linemargin.left - linemargin.right,
+    lineheight = 500 - linemargin.top - linemargin.bottom;
+    
+var parseDate = d3.time.format("%Y").parse;
+    console.log(parseDate);
+
+var linex = d3.time.scale()
+    .range([0, linewidth]);
+
+var liney = d3.scale.linear()
+    .range([lineheight, 0]);
+
+var linexAxis = d3.svg.axis()
+    .scale(linex)
+    .orient("bottom");
+
+var lineyAxis = d3.svg.axis()
+    .scale(liney)
+    .orient("left");
+
+var line = d3.svg.line()
+    .x(function(d) { return linex(d.Year); })
+    .y(function(d) { return liney(d.Anomaly); });
+
+var linesvg = d3.select("body").append("svg")
+    .attr("width", linewidth + linemargin.left + linemargin.right)
+    .attr("height", lineheight + linemargin.top + linemargin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + linemargin.left + "," + linemargin.top + ")");
+
+d3.csv("EarthTemp.csv", function(error, data) {
+  data.forEach(function(d) {
+    d.Anomaly = +d.Anomaly
+    d.Year = parseDate(d.Year);
+  });
+
+  linex.domain(d3.extent(data, function(d) { return d.Year; }));
+  liney.domain(d3.extent(data, function(d) { return d.Anomaly; }));
+
+  linesvg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + lineheight + ")")
+      .call(linexAxis)
+      .attr("x", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end");
+
+  linesvg.append("g")
+      .attr("class", "y axis")
+      .call(lineyAxis)
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("Tornado count");
+
+  linesvg.append("path")
+      .datum(data)
+      .attr("class", "line")
+      .attr("d", line);
+});
+    </script>
