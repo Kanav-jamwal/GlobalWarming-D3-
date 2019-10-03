@@ -13,11 +13,24 @@ Details of the Dasboard :
 <br />
 
 How to run the dashboard:
-1. Open the file Earth.html using bracket or Visual studio code editor.
+1. Open the file Earth.html using **bracket** or Visual studio code editor.
 2. Launch the file using the code editor.
 
 <br />
 
 Image's of the interactive dashboard.
 
+1. Carbon-Dioxide Sheet shpwing emission for each country over the years from 1990-2014.
+
 ![](Sheet3.png)
+
+2. Twitter Sentiment Analyses showing different emotions of people about Global Warming and **top 10 tweets.**
+
+![](Sheet1.png)
+
+3. Earth temperature over the years.
+
+![](Sheet2.png)
+
+4. Frequent positive and negative words used by the people to express about **Global Warming**.
+
