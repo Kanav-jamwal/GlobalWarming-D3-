@@ -25,15 +25,19 @@ Image's of the interactive dashboard.
 ![](Sheet3.png)
 
 <br />
+
 2. **Twitter Sentiment Analyses showing different emotions of people about Global Warming and top 10 tweets.**
 
 ![](Sheet1.png)
 
 <br />
+
 3. **Earth temperature over the years.**
+
 ![](Sheet2.png)
 
 <br />
+
 4. **Frequent positive and negative words used by the people to express about Global Warming**.
 
 ![](Sheet4.png)
